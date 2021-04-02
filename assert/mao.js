@@ -17,8 +17,7 @@ var getJSON = function(url, callback) {
 };
 
 // URL of data_list
-var json_data_url = "all.json";
-//var json_data_url = "https://raw.githubusercontent.com/Co10/temp_json/main/all.json";
+var json_data_url = "https://raw.githubusercontent.com/Co10/mao/gh-pages/assert/all.json";
 
 var localdata = [];
 
