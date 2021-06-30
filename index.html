@@ -1,64 +1,83 @@
 <html>
-<head>
-<meta charset = "utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>毛概搜题</title>
-</head>
-<style>
-h1 {
-    text-align: center;
-}
-#switch_div {
-    text-align: center;
-    margin: 20px;
-}
-#switch_div button {
-    cursor: pointer;
-    padding: 8px;
-    color: white;
-    background: linear-gradient(90deg, rgba(21,16,93,1) 0%, rgba(40,40,135,1) 10%, rgba(5,69,175,1) 64%, rgba(10,176,209,1) 100%);
-    font-size: 18px;
-    border-radius: 20px;
-    border: none;
-    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
-}
-</style>
-<link rel="stylesheet" href="/assert/search.css" type="text/css">
-<link rel="stylesheet" href="/assert/answer.css" type="text/css">
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>毛概搜题</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    #switch_div {
+      text-align: center;
+      margin: 20px;
+    }
+    #switch_div button {
+      cursor: pointer;
+      padding: 8px;
+      color: white;
+      background: linear-gradient(
+        90deg,
+        rgba(21, 16, 93, 1) 0%,
+        rgba(40, 40, 135, 1) 10%,
+        rgba(5, 69, 175, 1) 64%,
+        rgba(10, 176, 209, 1) 100%
+      );
+      font-size: 18px;
+      border-radius: 20px;
+      border: none;
+      box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%),
+        0 1px 3px 1px rgb(60 64 67 / 15%);
+    }
+  </style>
+  <link rel="stylesheet" href="assert/search.css" type="text/css" />
+  <link rel="stylesheet" href="assert/answer.css" type="text/css" />
+  <body>
     <h1>毛概</h1>
 
-    <div id="switch_div"><button>点击切换至<span id="switch_text">刷题</span>模式</button></div>
+    <div id="switch_div">
+      <button>点击切换至<span id="switch_text">刷题</span>模式</button>
+    </div>
 
     <!--<div id="chapter" class="ch"></div>-->
 
     <div id="search_mode">
-    <div id="search" class="search">
-        <input type="text" id="searchInput" class="searchIn" placeholder="key word ...">
-    </div>
-    <div id="ans" class="ans"></div>
+      <div id="search" class="search">
+        <input
+          type="text"
+          id="searchInput"
+          class="searchIn"
+          placeholder="key word ..."
+        />
+      </div>
+      <div id="ans" class="ans"></div>
     </div>
 
     <div id="answer_mode">
-        <div class="modifications">
-            <li><input type="checkbox" id="ch_01" checked><label for="ch_01">单选/判断自动提交</label></li>
-            <li><input type="checkbox" id="ch_02" checked><label for="ch_02">提交后自动显示解析</label></li>
-        </div>
-        <div class="rand_button">
-            <button id="refresh_now">随机50题(不重复)</button>
-            <button class="all_submit">提交全部答案</button>
-        </div>
-        <div class="questions_to_answer">
-            
-        </div>
-        <div style="text-align: center;">
-            <button class="all_submit">提交全部答案</button>
-        </div>
+      <div class="modifications">
+        <li>
+          <input type="checkbox" id="ch_01" checked /><label for="ch_01"
+            >单选/判断自动提交</label
+          >
+        </li>
+        <li>
+          <input type="checkbox" id="ch_02" checked /><label for="ch_02"
+            >提交后自动显示解析</label
+          >
+        </li>
+      </div>
+      <div class="rand_button">
+        <button id="refresh_now">随机50题(不重复)</button>
+        <button class="all_submit">提交全部答案</button>
+      </div>
+      <div class="questions_to_answer"></div>
+      <div style="text-align: center">
+        <button class="all_submit">提交全部答案</button>
+      </div>
     </div>
-</body>
-<script src="/assert/switch.js"></script>
-<script src="/assert/mao.js"></script>
-<script src="/assert/search.js"></script>
-<script src="/assert/answersheet.js"></script>
-
+  </body>
+  <script src="assert/switch.js"></script>
+  <script src="assert/mao.js"></script>
+  <script src="assert/search.js"></script>
+  <script src="assert/answersheet.js"></script>
 </html>
