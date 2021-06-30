@@ -1,0 +1,42 @@
+.searchIn{
+    display: inline-block;
+    border-radius: 25px;
+    background-color: #dddddd70;
+    border: none;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    outline: none;
+    padding: 12px 12px;
+    box-shadow: 0px 0px 8px 2px #cacacab3;
+}
+.searchIn:focus {
+    outline-width: 0;
+}
+.ans {
+    display: block;
+}
+.list {
+    display: block;
+    background: #d6d6d661;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px 2px #acacacb3;
+    margin: 15px;
+}
+.stem {
+    font-size: large;
+    display: block;
+}
+.answers {
+    display: block;
+}
+.correctAnswer {
+    display: block;
+}
+.analysis {
+    display: block;
+}
+.difficult {
+    display: block;
+}

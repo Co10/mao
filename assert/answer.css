@@ -1,0 +1,76 @@
+#answer_mode {
+    display: none;
+}
+
+.modifications {
+    text-align: center;
+}
+.modifications li {
+    display: inline-block;
+    list-style: none;
+}
+.rand_button {
+    text-align: center;
+}
+
+.sheetAnswer {
+    background-color: #e5e8ff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+}
+
+.analysis {
+    display: none;
+}
+
+.all_submit {
+    display: none;
+    cursor: pointer;
+    padding: 8px;
+    background-color: #e5bcff;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+}
+.modifications label {
+    cursor: pointer;
+}
+
+#refresh_now {
+    cursor: pointer;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+}
+
+.rand_button {
+    margin: 10px;
+}
+
+.sheet_submit {
+    margin: 5px;
+}
+.sheet_submit button {
+    cursor: pointer;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: none;
+    background-color: antiquewhite;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+}
+
+.sheet_choice li {
+    line-height: 30px;
+    padding: 2px;
+}
+.sheet_choice input {
+    width: 0;
+}
+.sheet_choice label {
+    cursor: pointer;
+}
