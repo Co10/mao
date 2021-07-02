@@ -39,8 +39,7 @@ function iniF_KEY() {
 
 function addTofavorite(n) {
   let res0 = localStorage.getItem("mark");
-  if (res0 === "" || res0 === null) localStorage.setItem("mark", n);
-  else {
+  if (!ifMarked(n)) {
     localStorage.setItem("mark", res0 + "," + n);
   }
 }
