@@ -29,10 +29,102 @@
       box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%),
         0 1px 3px 1px rgb(60 64 67 / 15%);
     }
+    .favorite {
+      z-index: 5;
+      position: fixed;
+      right: 0;
+      top: 0;
+      transform: translate(-50%, 10px);
+    }
+    .favorite button {
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 20px;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 24px;
+      background-color: #b0daff80;
+      box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%),
+        0 1px 3px 1px rgb(60 64 67 / 15%);
+    }
+    .fav_list {
+      display: none;
+      margin: auto;
+      position: fixed;
+      width: 95%;
+      max-width: 700px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 5px;
+      background-color: rgb(242 242 242);
+      z-index: 10;
+      overflow: auto;
+      box-shadow: 0 0 10px 1000px #000000ab;
+    }
+    .fav_top {
+      display: flex;
+      justify-content: space-between;
+    }
+    .fav_top input {
+      width: 70%;
+      max-width: 600px;
+      margin: 5px;
+      padding: 10px;
+      border-radius: 25px;
+      border: none;
+    }
+    .fav_top input:focus {
+      outline-width: 0;
+    }
+    .fav_top button {
+      border: none;
+      color: rgb(140 140 140 / 71%);
+      background-color: #ffffff00;
+      cursor: pointer;
+      font-size: 40px;
+    }
+    .favo_div {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .favo_div button {
+      border: none;
+      background-color: #ffffff00;
+      cursor: pointer;
+      font-size: 30px;
+    }
+    .fav_main ul {
+      padding-left: 0;
+    }
+    .sheetMark {
+      margin: auto;
+      width: 95%;
+      background-color: #e5e8ff;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%),
+        0 1px 3px 1px rgb(60 64 67 / 15%);
+      position: relative;
+    }
   </style>
   <link rel="stylesheet" href="assert/search.css" type="text/css" />
   <link rel="stylesheet" href="assert/answer.css" type="text/css" />
   <body>
+    <div class="favorite">
+      <button id="starButton">⭐</button>
+    </div>
+    <div class="fav_list">
+      <div class="fav_top">
+        <input id="markfilter" placeholder="在当前搜索" />
+        <button id="closeStar">×</button>
+      </div>
+      <div class="fav_main"></div>
+    </div>
+
     <h1>毛概</h1>
 
     <div id="switch_div">
@@ -65,6 +157,11 @@
             >提交后自动显示解析</label
           >
         </li>
+        <li>
+          <input type="checkbox" id="ch_03" checked /><label for="ch_03"
+            >错题自动加入收藏</label
+          >
+        </li>
       </div>
       <div class="rand_button">
         <button id="refresh_now">随机50题(不重复)</button>
@@ -80,4 +177,5 @@
   <script src="assert/mao.js"></script>
   <script src="assert/search.js"></script>
   <script src="assert/answersheet.js"></script>
+  <script src="assert/mark.js"></script>
 </html>
