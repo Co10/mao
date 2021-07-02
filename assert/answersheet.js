@@ -102,7 +102,7 @@
           it.no,
           it.stem,
           it.type,
-          it.answers.split("/"),
+          it.answers.toString().split("/"),
           it.correctAnswer,
           it.analysis
         );
