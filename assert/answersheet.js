@@ -242,7 +242,7 @@
           // if enable auto submit
           if (
             (ty === "单选题" || ty === "判断题") &&
-            smallStatus(getSto("ch01") === true)
+            smallStatus(getSto("ch01")) === true
           ) {
             the_sheet_div.children[2].children[0].click();
           }
