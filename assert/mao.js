@@ -40,7 +40,8 @@ function iniF_KEY() {
 function addTofavorite(n) {
   let res0 = localStorage.getItem("mark");
   if (!ifMarked(n)) {
-    localStorage.setItem("mark", res0 + "," + n);
+    if (res0 !== "") res0 += ",";
+    localStorage.setItem("mark", res0 + n);
   }
 }
 
